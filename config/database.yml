@@ -8,7 +8,7 @@ default: &default
 
 development:
   <<: *default
-  database: myapp_development
+  database: fp-reservation_development
   host: db
   username: root
   password: password

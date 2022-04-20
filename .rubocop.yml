@@ -1,3 +1,21 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  NewCops: disable
+  Exclude:
+    - 'config.ru'
+    - 'bin/**'
+    - 'lib/**'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+
 Style/Documentation:
   Enabled: false
-EnforcedStyle: compact
+
+ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

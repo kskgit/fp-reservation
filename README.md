@@ -72,15 +72,27 @@
 
     1. Gemfile.lock
         - 中身空で作成
-1. 以下コマンドを実行しRailsプロジェクトを作成
+1. Railsプロジェクトを作成
     ```
     docker-compose run web rails new . --force --no-deps --database=mysql
     ```
-1. 以下コマンドを実行しビルド
+1. ビルド
     ```
     docker-compose build 
     ```
-1. 以下コマンドを実行しDB作成
+1. DB作成
     ```
     docker-compose run web rails db:create
+    ```
+
+## 起動
+1. 環境を指定しない場合
+    ```
+    docker-compose run up
+    ```
+
+1. 環境を指定する場合
+    ```
+    // 例
+    RAILS_ENV=production docker-compose up
     ```

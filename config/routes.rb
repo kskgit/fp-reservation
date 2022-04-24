@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :user do
+  namespace :customer do
     root 'top#index'
   end
 

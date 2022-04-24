@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   include ErrorHandlers if Rails.env.production?
 
   def set_layout
-    if params[:controller].match(%r{\A(fp|user)/})
+    if params[:controller].match(%r{\A(fp|customer)/})
       Regexp.last_match[1]
     else
-      'user'
+      'customer'
     end
   end
 

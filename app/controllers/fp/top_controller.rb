@@ -1,4 +1,4 @@
-class Fp::TopController < ApplicationController
+class Fp::TopController < Fp::Base
   def index
     render action: 'index'
   end

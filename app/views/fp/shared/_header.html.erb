@@ -1,0 +1,10 @@
+<header>
+  <span class="logo-mark">FP予約システム</span>
+  <%=
+    if current_fp
+      link_to "ログアウト", :fp_session, method: :delete
+    else
+      link_to "ログイン", :fp_login
+    end
+  %>
+</header>
